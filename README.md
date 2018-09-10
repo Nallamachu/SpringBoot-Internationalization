@@ -96,6 +96,7 @@ In ```application.properties``` I have changes default ```server.port``` from 80
 While accessing the REST URL, we need to set Accept-Language as us/fr for loading respective message. If not confiure anything, will be considered US as default locale and will the value from ```messages.properties``` file.
 
 *Note: You can also create other properties file like messages_de.properties which will point to the German language like below and try the setting Accept-language as de and look at the value is loading properly or not.*
+**messages_de.properties**
 ```properties
 good.morning.message=Guten Morgen
 ```
