@@ -1,7 +1,7 @@
 # SpringBoot-Internationalization
 POC project of Internationalization using Spring Boot technology
 
-SpringBootInternationalization is a POC project to know how to configure and make it work of internationalization. For this project, I choose only WEB and DevTools modules. For I18n we use mainly of below two Bean configurations which I have separated from main class and placed under the package of ```com.i18n.message.config```.
+SpringBootInternationalization is a POC project to know how to configure and make it work for internationalization. For this project, I choose only ```WEB``` and ```DevTools``` modules. For I18n, we use mainly of below two Bean configurations, which I have separated from main class and placed under the package of ```com.i18n.message.config```.
 
 ```java
 package com.i18n.message.config;
@@ -91,11 +91,11 @@ public class SpringBootInternationalizationApplication {
 }
 ```
 
-In ```application.properties``` I have changes default ```server.port``` from 8080 to 6060 which you can also observe on application start.
+In ```application.properties``` I have changed default ```server.port``` from 8080 to 6060 which you can also observe on application start logs.
 
-While accessing the REST URL, we need to set Accept-Language as us/fr for loading respective message. If not confiure anything, will be considered US as default locale and will the value from ```messages.properties``` file.
+While accessing the REST URL, we need to set ```Accept-Language``` as us/fr for loading message in respective language. If not confiure anything, will be considered US as default locale and will load the value from ```messages.properties``` file.
 
-*Note: You can also create other properties file like messages_de.properties which will point to the German language like below and try the setting Accept-language as de and look at the value is loading properly or not.*
+*Note: You can also create other properties file like ```messages_de.properties``` which will point to the German language like below and try to set the Accept-language as de and look at the value is loading properly or not.*
 **messages_de.properties**
 ```properties
 good.morning.message=Guten Morgen
